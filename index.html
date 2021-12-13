@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,14 @@
     <link rel="stylesheet" href="./index.css">
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <title>ITC Bootcamp</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
+    <link rel="stylesheet" href="build/css/intlTelInput.css">
+    <!-- Use as a jQuery plugin -->
+<script src="https://code.jquery.com/jquery-latest.min.js"></script>
+<script src="build/js/intlTelInput-jquery.min.js"></script> 
+
 </head>
+
 <body>
     <header class="header">
         <div class="header_top">
@@ -21,23 +29,23 @@
                 <a href="#section2" class="header_nav">О нас</a>
                 <a href="#section3" class="header_nav">О франшизе</a>
                 <a href="#footer" class="header_nav">Контакты</a>
-                <a href="#" class="header_nav">+996500800588</a>
+                <a href="tel:+7 3833 777 598" class="header_nav">+7 3833 777 598</a>
             </nav>
             <div class="hamburger-menu">
                 <input id="menu__toggle" type="checkbox" />
                 <label class="menu__btn" for="menu__toggle">
-                  <span></span>
+                    <span></span>
                 </label>
                 <ul class="menu__box">
-                  <li><a class="menu__item" href="#section1">Главная</a></li>
-                  <li><a class="menu__item" href="#section2">О нас</a></li>
-                  <li><a class="menu__item" href="#section3">О франшизе</a></li>
-                  <li><a class="menu__item" href="#footer">Контакты</a></li>
-                  <li><a class="menu__item" href="#">+996500800588</a></li>
+                    <li><a class="menu__item" href="#section1">Главная</a></li>
+                    <li><a class="menu__item" href="#section2">О нас</a></li>
+                    <li><a class="menu__item" href="#section3">О франшизе</a></li>
+                    <li><a class="menu__item" href="#footer">Контакты</a></li>
+                    <li><a class="menu__item" href="tel:+7 3833 777 598">+7 3833 777 598</a></li>
                 </ul>
-              </div>
+            </div>
         </div>
-       <div class="header_bot"></div>
+        <div class="header_bot"></div>
     </header>
 
     <div class='ThanksModal'>
@@ -47,14 +55,15 @@
             </div>
         </div>
     </div>
-    
+
     <section class="section1" id="section1">
         <div class="section1_container">
-            <p  style="font-size: 25px;">Франшиза</p>
+            <p style="font-size: 25px;">Франшиза</p>
             <h1 style="font-size: 38px;">ITC BOOTCAMP <br> СТАНЬТЕ</h1>
             <p style="font-size: 25px;">нашим партнером</p>
         </div>
-        <button id="first-button"  class="button btn-11"><a href="#section5">ОСТАВИТЬ ЗАЯВКУ<div class="dot"></div></a></button>
+        <button id="first-button" class="button btn-11"><a href="#section5">ОСТАВИТЬ ЗАЯВКУ<div class="dot"></div>
+            </a></button>
     </section>
     <div class="container">
         <section class="section2" id="section2">
@@ -82,90 +91,125 @@
         <section class="section3" id="section3">
             <h2>МЫ ГОТОВЫ ПРЕДСТАВИТЬ</h2>
             <div class="section3_cont">
-                    
+
                 <div class="section3_div">
                     <img src="./img/section4_logo1.png" alt="img1" class="section3_img">
-                    <p class="section3_p">Предлагаем план последовательных действий по созданию и развитию самого перспективного проекта XXI - века.</p>
+                    <p class="section3_p">Предлагаем план последовательных действий по созданию и развитию самого
+                        перспективного проекта XXI - века.</p>
                 </div>
                 <div class="section3_div">
                     <img src="./img/section4_logo2.png" alt="img1" class="section3_img">
-                    <p class="section3_p">Предоставляем проверенную и эффективную стратегию продвижения бизнеса,а также консультации и обучение по работе в рамках этой стратегии.</p>
+                    <p class="section3_p">Предоставляем проверенную и эффективную стратегию продвижения бизнеса,а также
+                        консультации и обучение по работе в рамках этой стратегии.</p>
                 </div>
                 <div class="section3_div">
                     <img src="./img/section4_logo3.png" alt="img1" class="section3_img">
-                    <p class="section3_p">Предоставляем совокупность корпоративных и маркетинговых идентификаторов и гайдлайнов.</p>
+                    <p class="section3_p">Предоставляем совокупность корпоративных и маркетинговых идентификаторов и
+                        гайдлайнов.</p>
                 </div>
                 <div class="section3_div">
                     <img src="./img/section4_logo4.png" alt="img1" class="section3_img">
-                    <p class="section3_p" >Адаптируем упаковку учитывая ваши рекомендации и особенности вашей страны, региона.</p>
+                    <p class="section3_p">Адаптируем упаковку учитывая ваши рекомендации и особенности вашей страны,
+                        региона.</p>
                 </div>
             </div>
-            
+
         </section>
         <section class="section4">
             <div class="section4_left">
                 <h2 class="section4_h2">МЫ ХОТИМ</h2>
                 <p class="section4_bald_p">развиваться вместе с вами</p>
-                <p class="p1">Мы активно развиваемся и с каждым днем увеличиваем количество наших партнеров во всем мире. 
+                <p class="p1">Мы активно развиваемся и с каждым днем увеличиваем количество наших партнеров во всем
+                    мире.
                     Не упустите возможность стать частью нашей команды!</p>
                 <p class="section4_bald_p">Что вы получите сотрудничая с нами:</p>
                 <div class="section4_div">
                     <div class="section_check"> <img src="./img/Vector 10.png" alt=""></div>
-                    <p class="section4_p">Самый перспективный бизнес нашего времени с огромным потенциалом роста и высокой маржой </p>
+                    <p class="section4_p">Самый перспективный бизнес нашего времени с огромным потенциалом роста и
+                        высокой маржой </p>
                 </div>
                 <div class="section4_div">
                     <div class="section_check"> <img src="./img/Vector 10.png" alt=""></div>
-                    <p class="section4_p"> Проверенную и эффективную маркетинговую стратегию для запуска и развития бизнеса</p>
+                    <p class="section4_p"> Проверенную и эффективную маркетинговую стратегию для запуска и развития
+                        бизнеса</p>
                 </div>
                 <div class="section4_div">
                     <div class="section_check"> <img src="./img/Vector 10.png" alt=""></div>
-                    <p class="section4_p">Надежного, гибкого партнера с опытом на различных рынках, передачу опыта в этой среде бизнеса</p>
+                    <p class="section4_p">Надежного, гибкого партнера с опытом на различных рынках, передачу опыта в
+                        этой среде бизнеса</p>
                 </div>
             </div>
             <div class="section4_right">
                 <img src="./img/buisnessman.png" alt="" width="100%" height="100%">
             </div>
-          
+
         </section>
         <section class="section5" id="section5">
             <div class="section5_left">
                 <h2 style="font-size: 30px;">МЫ ВСЕГДА ОТКРЫТЫ ДЛЯ СОТРУДНИЧЕСТВА</h2>
-                <p class="p1">Свяжитесь с нами для получения более детальной информации, заполнив форму ниже или написав на почту export@zakvaski.com.</p>
+                <p class="p1">Свяжитесь с нами для получения более детальной информации, заполнив форму ниже или написав
+                    на почту franchise.itcbootcamp@gmail.com</p>
                 <form class="section5_form" id="form">
-                    <input type="text" name="" id="name" class="section5_input" placeholder="Имя" required>
-                    <input type="number" name="" id="whatsapp" class="section5_input" placeholder="Ваши контакты" title="" required>
-                    <input type="email" name="" id="email" class="section5_input" placeholder="Почта" required>
-                    <input type="text" name="" id="city" class="section5_input" placeholder="Город" required>
-                    <button class="button shining  btn-11" id="section5_button">ОТПРАВИТЬ ЗАЯВКУ<div class="dot"></div></button>
+                    <div class="section5_contact">
+                        <input type="text" name="" id="name" class="section5_input" placeholder="Имя" required>
+                    </div>
+                    <div class="section5_contact">
+                        <select class="section5_select"  id=""></select>
+                        <input type="tel" name="" id="whatsapp" class="section5_whatsapp section5_input " placeholder="Ваши контакты" title="" required>
+                    </div>
+                    <div class="section5_contact">
+                        <input type="email" name="" id="email" class="section5_input" placeholder="Почта" required>
+                    </div>
+                    <div class="section5_contact">
+                        <input type="text" name="" id="city" class="section5_input" placeholder="Город" required>
+                    </div>
+                    <button class="button shining  btn-11" id="section5_button">ОТПРАВИТЬ ЗАЯВКУ<div class="dot"></div>
+                    </button>
                 </form>
             </div>
             <div class="section5_right">
                 <img src="./img/bitcoin.png" alt="" class="section5_img">
             </div>
-        </section> 
+        </section>
 
     </div>
-    
+
     <footer class="footer" id="footer">
         <h2 class="footer_h2">НАШИ КОНТАКТЫ</h2>
         <p class="footer_p">Приезжайте к нам в офис, звоните или пишите. Ответим на все вопросы)</p>
         <p class="footer_p">Бишкек</p>
         <p class="footer_bald_p"> Раззакова 32 БЦ «Олимп»</p>
         <p class="footer_p">Номер телефона</p>
-        <p class="footer_bald_p">+996 500 800 588</p>
+        <p class="footer_bald_p">+7 3833 777 598</p>
         <p class="footer_p">Электронная почта</p>
-        <p class="footer_bald_p" > franchise.itcbootcamp <br/> @gmail.com</p>
+        <p class="footer_bald_p"> franchise.itcbootcamp <br /> @gmail.com</p>
         <div>
             <div class="footer_circle"></div>
             <div class="footer_circle"></div>
             <div class="footer_circle"></div>
         </div>
         <div class="footer_links">
-            <a href="https://t.me/joinchat/REIbu8sdslM2OWEy"><img src="./img/telegram.png" alt="telegram" class="footer_icon"></a>
-            <a href="https://www.instagram.com/itcbootcamp/?hl=ru"><img src="./img/inst.png" alt="inst" class="footer_icon"></a>
+            <a href="https://t.me/joinchat/REIbu8sdslM2OWEy"><img src="./img/telegram.png" alt="telegram"
+                    class="footer_icon"></a>
+            <a href="https://www.instagram.com/itcbootcamp/?hl=ru"><img src="./img/inst.png" alt="inst"
+                    class="footer_icon"></a>
         </div>
-        <button class="footer_button  btn-11" ><a href="https://www.itcbootcamp.com/#/">ПЕРЕЙТИ НА САЙТ ITC BOOTCAMP</a></button>
+        <button class="footer_button  btn-11"><a href="https://www.itcbootcamp.com/#/">ПЕРЕЙТИ НА САЙТ ITC
+                BOOTCAMP</a></button>
     </footer>
+    <script>
+
+        const phoneInputField = document.querySelector("#whatsapp");
+        const phoneInput = window.intlTelInput(phoneInputField, {
+            utilsScript:
+                "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+        });
+
+    </script>
     <script src="./index.js"></script>
+    <script src="./list.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+
 </body>
+
 </html>
